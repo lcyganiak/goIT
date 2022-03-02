@@ -1,0 +1,112 @@
+@import './mixins';
+@import './defaultColor';
+
+
+$width: 100%;
+
+
+// zagnieżdżenia
+.nav-ul {
+
+    .nav-li {
+        display: inline-block;
+        font-size: 25px;
+        width:  calc(#{$width} / 5 - 2% );
+        text-align: center;
+        color: $color-main-dark;
+    }
+}
+
+// Dyrektywa @extend
+%button {
+    display: inline-flex;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+
+  }
+  // jeżeli nie mamy klasy button w kodzi html 
+  // możemy w sekektorze użyć zaminat .button %button 
+// .button-1 {
+//     @extend %button;
+//     background-color: $background-color-1;
+// }
+// .button-2 {
+//     @extend %button;
+//     background-color: $background-color-2;
+// }
+// .button-3 {
+//     @extend %button;
+//     background-color: $background-color-3;
+// }
+// .button-4 {
+//     @extend %button;
+//     background-color: $background-color-4;
+// }
+
+// Dyrektywa @mixin
+// warinat 1 
+.button-1 {
+    @include button-default;
+    background-color: $background-color-1;
+}
+// wariant 2 
+.button-2 {
+    @include button-default;;
+    background-color: $background-color-4;
+    &:hover {
+        color: yellowgreen;
+    }
+    &:focus {
+        color: pink;
+    }
+}
+.button-3 {
+    @include button-default-2($background-color-3);
+}
+.button-4 {
+    @include button-default-2($background-color-4);
+}
+
+
+//Dyrektywa @each
+.foto {
+    @include flex;
+    @include foto;
+    .foto-bg {
+        @include foto-bg;
+
+    }
+}
+@each $animal in dog, cat, fish {
+    .foto-bg-#{$animal} {
+      background-image: url(./foto/#{$animal}.jpg);
+      background-size: auto ;
+    }
+  }
+
+.main-footer {
+    @include flex;
+    .main-footer-block {
+        .main-fotter--paragraf{
+            .main-footer-span-in-paragraf {
+                color: $color-main-dark;
+                &:hover {
+                    font-size: 40px;
+                }
+                &:focus {
+                    border: 5px dotted map-get($colors , 'accent');
+                }
+            }
+            
+          
+        }
+    }
+}
+
+.main-footer-block-1 {
+    .main-footer-span-in-paragraf{
+        color: yellowgreen;
+    }
+}

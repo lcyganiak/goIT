@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Walidacja </title>
+</head>
+<body>
+    <h1>Walidacja </h1>
+
+
+
+    <h2>required</h2>
+    <form>
+        <label>
+          Email
+          <input type="email" name="email" id="input_email" />
+          <p class="error" role="alert">wypełnij pole</p>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" required />
+        </label>
+      
+        <button type="submit" id="xd">Submit</button>
+      </form>
+<h2>Ograniczenie długości</h2>
+<form>
+    <label>
+      Username
+      <input type="text" name="username" required minlength="3" />
+    </label>
+    <label>
+      Password
+      <input type="password" name="password" required minlength="6" maxlength="12" />
+    </label>
+  
+    <button type="submit">Submit</button>
+</form>
+<h2>Ograniczanie wartości</h2>
+<form>
+    <fieldset>
+     <legend>Ograniczanie wartości przez dodanie wartości type</legend>  
+      <label for="number">number
+      <input type="number" name="amount" required min="1" max="10" id="number" /></label>
+      <label for="range">range
+      <input type="range" name="amount" required min="1" max="10" id="range" /></label>
+      <label for="">date
+      <input type="date" name="amount" required min="1" max="10" id="date" /></label>
+  
+    <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+
+  <h2>Wyrażenie regularne</h2>
+
+  <fieldset>
+      <legend>Wyrażenia regularne <a href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Informacje o wyrażniech regularnych</a></legend>
+      <form>
+        <label>
+          Username
+          <input type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" required minlength="6" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+  </fieldset>
+
+  <h2>:enabled i :disabled</h2>
+
+  <form class="form">
+    <div role="group" class="form-group">
+      <b class="form-caption">What are your hobbies?</b>
+  
+      <div class="form-field">
+        <input type="checkbox" class="form-input" name="hobby" value="sports" id="sports">
+        <label class="form-label" for="sports">Sports</label>
+      </div>
+  
+      <div class="form-field">
+        <input type="checkbox" class="form-input" name="hobby" value="music" id="music">
+        <label class="form-label" for="music">Music</label>
+      </div>
+  
+      <div class="form-field">
+        <label class="form-label" for="books">Books</label>
+        <input type="checkbox" class="form-input" name="hobby" value="books" id="books">
+        
+      </div>
+      <p>pamiętaj dla :checked label musi być za radio lub checkbox, musi też być odpowiednio sparowany</p>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  <h2>:in-range i :out-of-range</h2>
+      <!-- <script src="main.js"></script> -->
+
+      <fieldset>
+  
+          <form class="form">
+            <div class="form-field2">
+              <label for="amount-1" class="form-label">How many pizzas do you want to order?</label>
+              <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1" class="form-input">
+            </div>
+              <div class="form-field2">
+              <label for="amount-2" class="form-label">How many pizzas do you want to order?</label>
+              <input type="number" required min="1" max="10" step="1" value="3" name="amount-2" id="amount-2" class="form-input">
+            </div>
+              <div class="form-field2">
+              <label for="amount-3" class="form-label">How many pizzas do you want to order?</label>
+              <input type="number" required min="1" max="10" step="1" name="amount-3" id="amount-3" class="form-input">
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+      </fieldset>
+
+      <h2>:required i :optional</h2>
+      <div class="req">
+        <form class="form">
+            <label class="form-label">
+              <span class="label-text">Username (optional)</span>
+              <input type="text" class="form-input" name="username">
+            </label>
+          
+            <label class="form-label">
+              <span class="label-text">Email (required)</span>
+              <input type="email" class="form-input" name="mail" required>
+            </label>
+          
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+
+
+      <h2>:valid i :invalid</h2>
+
+      <div class="val">
+        <form class="form">
+            <label class="form-label">
+              <span class="label-text">Username</span>
+              <input type="text" class="form-input" name="username" required minlength="3">
+            </label>
+          
+            <label class="form-label">
+              <span class="label-text">Email</span>
+              <input type="email" class="form-input" name="mail" required>
+            </label>
+          
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+
+
+      <h2>:placeholder-shown</h2>
+      <form class="form">
+        <label class="form-label">
+          <span class="label-text">Username</span>
+          <input type="text" class="form-input" name="username" placeholder="Jacob Mercer">
+        </label>
+      
+        <label class="form-label">
+          <span class="label-text">Email</span>
+          <input type="email" class="form-input" name="mail" placeholder="jacob@mail.com">
+        </label>
+      
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>:focus-within</h2>
+
+      <form class="form form__within">
+        <label class="form-label">
+          <span class="label-text">Username</span>
+          <input type="text" class="form-input" name="username" required minlength="3" placeholder=" ">
+        </label>
+      
+        <label class="form-label">
+          <span class="label-text">Email</span>
+          <input type="email" class="form-input" name="mail" required placeholder=" ">
+        </label>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <script src="main.js"></script>
+</body>
+</html>

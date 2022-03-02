@@ -1,0 +1,21 @@
+.relativ {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+.relativ2 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+.relativ3 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+.xd {
+    display: flex;
+}

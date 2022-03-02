@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 900;
+}
+hr {
+    margin: 35px;
+}
+form {
+    border: 1px solid black;
+}
+.form, .time , .textarea label {
+    display: block;
+    margin-bottom: 25px;
+
+    padding: 5px;
+    
+}
+.form, .time,  .textarea label span {
+    display: inline-block;
+    min-width: 80px;
+}
+/*placeholder*/
+.input {
+    padding: 8px;
+    font-family: inherit;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+
+  textarea {
+    /* resize: none; */
+    /* resize: both;
+    resize: horizontal;
+    resize: vertical; */
+    resize: horizontal;
+  }
+  select, #fav, #state {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+ 
+
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .form-group p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .grupa label {
+
+        display: block;
+    
+  }
+  .grupa form {
+      border: none;
+  }
+
+
+  /* input file */
+
+  input[type="file"] {
+      display: none;
+  }

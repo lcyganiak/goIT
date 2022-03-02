@@ -1,0 +1,278 @@
+body {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5,p, ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- nav -------------- */
+
+.menu {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    /*  Making ul.menu a Flex container  */
+    display: flex;
+}
+
+.menu>.item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu .link {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+}
+
+.menu .link:hover {
+    text-decoration: underline;
+}
+
+/* end----- nav -------------- */
+
+
+/* -----------------część  flex-direction -------------------- */
+.item-start {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.main-height {
+    height: 300px;
+    border: 1px solid black;
+}
+
+.flex-container {
+   display: flex;
+    /*  flex-direction: column;  */
+    /* główna oś staje się pionowa, zaczynając od góry i kończąc na dole. */
+    /* flex-direction: row;  */
+    /* domyslna wartośc */
+    /* flex-direction: row-reverse;  */
+    /* odwraca kolejność */
+    /* flex-direction: column-reverse; */
+    /*odwraca kolejność  w kolumnie */
+}
+
+
+/* end-----------------część  flex-direction -------------------- */
+.justify-main {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* elementy są dociskane do początku osi. To jest ustawienie domyślne. */
+    /* justify-content: flex-end; */
+    /*elementy są dociskane do końca osi.*/
+    /* justify-content: center; */
+    /*elementy są wyśrodkowane na osi.*/
+    /* justify-content: space-between; */
+    /*elementy są równomiernie rozmieszczone na głównej osi. Pierwszy element jest ustawiony na początku osi, a ostatni na końcu.*/
+    /* justify-content: space-around; */
+    /* elementy są rozmieszczone równomiernie, ale lewy i prawy element pozostają w tyle za granicami kontenera o połowę odstępu między innymi elementami.*/
+    justify-content: space-evenly;
+    /*elementy są rozmieszczone w taki sposób, aby odległość między elementami i od elementów krawędziowych do granic kontenera była taka sama.*/
+
+    /* align-items */
+
+    align-items: stretch;
+    /* elementy rozciągają się na całą długość osi. Ta wartość jest domyślna.*/
+    /* align-items : flex-start; */
+    /* elementy są dociskane do początku osi.*/
+    /* align-items: flex-end; */
+    /*  elementy są dociskane do końca osi.*/
+    /* align-items: center; */
+    /*elementy są wyśrodkowane na osi.*/
+    /* align-items: baseline; */
+    /* elementy są wyrównane po linii bazowej ich zawartości tekstowej.*/
+}
+
+.justify-main p {
+    text-align: center;
+}
+
+/* -------------konternery z grafikami ----------------- */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+  
+.card {
+    display: flex;
+    width: 640px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.card.flex-start-aligned {
+    align-items: flex-start;
+}
+
+/* stosujemy jedno albo drugie */ 
+
+/* align-self jest dokładniejsz od flex-items*/
+/* .card.flex-start-aligned > img {
+    align-self: flex-start;
+  } */
+.card>.content {
+    margin-left: 15px;
+}
+
+/* end-------------konternery z grafikami ----------------- */
+/* ------------Właściwość flex-wrap -------------------- */
+.container {
+    max-width: 1200px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-set {
+    display: flex;
+
+    flex-wrap: wrap;
+    /*Łamie elemnty do nowej lini */
+    flex-wrap: nowrap;
+    /* nie łamie el. do nowej lini */
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    padding: 10px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+
+    flex-basis: calc((100% - 30px) / 3);
+    /*właściwość flex-basis ma pierwszeństwo przed właściwością width oraz właściwością height 
+    Za pomocą właściwości flex-basis możemy określić rozmiar główny obszaru zawartości interesującego nas elementu dziecka elementu HTML tworzącego układ elastyczny.
+    */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.item h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.item p {
+    margin: 0;
+}
+
+
+/* end------------Właściwość flex-wrap -------------------- */
+
+
+/*-------------------item-align-content-----------------------*/
+.align-content-main {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* dział jak est więcej niż jedna linia 
+    /* align-content: stretch; */
+    /*wiersze rozciągają się równomiernie, aby zająć całą przestrzeń. Domyślna wartość.*/
+    /* align-content: flex-start; */
+        /*wiersze są dociskane do początku osi.*/
+    /* align-content: flex-end; */
+        /*wiersze są dociskane do końca osi.*/
+        align-content: center;
+
+        /*wiersze są wyśrodkowane na osi.*/
+    /* align-content: space-between; */
+         /*elementy są równomiernie rozmieszczone na głównej osi. Pierwszy element jest ustawiony na początku osi, a ostatni na końcu.*/
+    /* align-content: space-around; */
+       /* elementy są rozmieszczone równomiernie, ale lewy i prawy element pozostają w tyle za granicami kontenera o połowę odstępu między innymi elementami.*/
+    /* align-content: space-evenly; */
+     /*elementy są rozmieszczone w taki sposób, aby odległość między elementami i od elementów krawędziowych do granic kontenera była taka sama.*/
+
+}
+.item-align-content {
+    height:50px;
+    width: 50px;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+/*--------------Właściwość flex-grow--------------------*/
+
+.container {
+    display: flex;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .sidebar {
+    flex-basis: 250px;
+    margin-right: 24px;
+    flex-grow: 1;
+  }
+  
+  .content {
+    flex-grow: 4;
+  }
+  
+  .sidebar,
+  .content {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: pink;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  /*--------------Właściwość flex-grow--------------------*/
+
+  /*flex order */
+  .order-flex {
+      display: flex;
+      align-items: stretch;
+      background-color: #f1f1f1;
+  }
+  .item-order {
+    background-color: DodgerBlue;
+    color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+  }
+  .item-order-3 {
+      order: 1
+  }
+  .item-order-2 {
+      order: 4;
+  }
+  .item-order-1 {
+    order: 3;
+}
+.item-order-4 {
+    order: 2;
+}

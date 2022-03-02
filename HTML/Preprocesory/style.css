@@ -1,0 +1,119 @@
+.nav-ul .nav-li {
+  display: inline-block;
+  font-size: 25px;
+  width: calc(100% / 5 - 2%);
+  text-align: center;
+  color: red;
+}
+
+.button-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #008CBA;
+}
+
+.button-2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #555555;
+}
+
+.button-2:hover {
+  color: yellowgreen;
+}
+
+.button-2:focus {
+  color: pink;
+}
+
+.button-3 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #e7e7e7;
+}
+
+.button-4 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #555555;
+}
+
+.foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.foto .foto-bg {
+  width: 30%;
+  height: 100%;
+  margin: 5px;
+}
+
+.foto-bg-dog {
+  background-image: url(./foto/dog.jpg);
+  background-size: auto;
+}
+
+.foto-bg-cat {
+  background-image: url(./foto/cat.jpg);
+  background-size: auto;
+}
+
+.foto-bg-fish {
+  background-image: url(./foto/fish.jpg);
+  background-size: auto;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-footer .main-footer-block .main-fotter--paragraf .main-footer-span-in-paragraf {
+  color: red;
+}
+
+.main-footer .main-footer-block .main-fotter--paragraf .main-footer-span-in-paragraf:hover {
+  font-size: 40px;
+}
+
+.main-footer .main-footer-block .main-fotter--paragraf .main-footer-span-in-paragraf:focus {
+  border: 5px dotted #d98328;
+}
+
+.main-footer-block-1 .main-footer-span-in-paragraf {
+  color: yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */

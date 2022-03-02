@@ -1,0 +1,176 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+  }
+  
+  input {
+    padding: 8px;
+    font-family: inherit;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  button {
+    display: inline-flex;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: #1976d2;
+  }
+  legend {
+      font-weight: bold;
+  }
+
+
+  /**/
+
+  .form-input:checked + .form-label {
+    color: #2196f3;
+  }
+  .form-caption {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 24px;
+  }
+  
+  .form-field2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .form-label {
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  /*:in-range i :out-of-range*/
+  .form-input:in-range {
+    border-color: #4caf50;
+  }
+  
+  .form-input:out-of-range {
+    border-color: #f44336;
+  }
+  
+  /* Example styles */
+ 
+  
+
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .form-input {
+    padding: 8px;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 16px;
+    outline: none;
+  }
+  
+
+  /**/
+
+
+  .req .form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .req .label-text {
+    margin-bottom: 4px;
+  }
+  
+  .req .form-input {
+    padding: 8px;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+  }
+  .req .form-input:required {
+    border-color: #f44336;
+  }
+  
+ .val .form-input:valid {
+    border-color: #4caf50;
+  }
+  
+  .val .form-input:invalid {
+    border-color: #f44336;
+  }
+  
+
+  
+  .val .form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .val .label-text {
+    margin-bottom: 4px;
+  }
+
+
+  .form-input:placeholder-shown {
+    border-color: #ffa000;
+  }
+  
+  .form-input:not(:placeholder-shown) {
+    border-color: #2196f3;
+  }
+
+  .form__within:focus-within {
+    border-color: #2196f3;
+  }
+  
+  .form__within:focus-within {
+    color: #2196f3;
+  }
+  .form__within {
+    width: 100%;
+    padding: 24px;
+    border-radius: 4px;
+    border: 2px dashed #2a2a2a;
+  }
+
+  .error {
+      visibility: hidden;
+      font-size: 10px;
+      color: #f44336;
+      margin: 0;
+  }
+  input::placeholder {
+    color: green;
+    font-weight: bold;
+  }

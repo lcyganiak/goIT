@@ -1,0 +1,108 @@
+/* Base style with white color. */
+body {
+    background-color: #fff;
+  }
+  
+  /* The color green is at 600px or wider. */
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: #4caf50;
+    }
+  }
+  
+  /* The color indigo is at 900px or wider. */
+  @media screen and (min-width: 900px) {
+    body {
+      background-color: #3f51b5;
+    }
+  }
+  
+  /* The color orange is at 1200px or wider. */
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: #ff5722;
+    }
+  }
+
+  /*
+  To zapytanie o media zostanie zastosowane podczas drukowania dokumentu. 
+*/
+@media print {
+    body {
+      display: none;
+    }
+  }
+  
+  /*
+    To zapytanie o media zostanie zastosowane, gdy rzutnia będzie szersza niż 400 pikseli. 
+   */
+  @media screen and (min-width: 400px) {
+    /* ... */
+  }
+  
+  /*
+    Typ screen można pominąć, jeśli style są pisane tylko dla ekranów. 
+   */
+  @media (min-width: 400px) {
+    /* ... */
+  }
+
+
+  .container {
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffc107;
+  
+    /*  Text styles  */
+    text-align: center;
+    line-height: 180px;
+    font-size: 32px;
+    white-space: nowrap;
+  }
+  
+  /* Set the maximum width of the responsive container. */
+  .container.responsive {
+    max-width: 1140px;
+    margin-bottom: 40px;
+  }
+  
+  /* Set the base width of a adaptive container. */
+  .container.adaptive {
+    max-width: 400px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .container {
+      background-color: #00bcd4;
+    }
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .container.adaptive {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .container {
+      background-color: #8bc34a;
+    }
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .container.adaptive {
+      max-width: 900px;
+    }
+  }
+  
+  @media screen and (min-width: 1140px) {
+    .container {
+      background-color: #ff5252;
+    }
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .container.adaptive {
+      max-width: 1140px;
+    }
+  }
+  
+  .container .label {
+    margin-top: 0;
+  }
+

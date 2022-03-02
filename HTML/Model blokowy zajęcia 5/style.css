@@ -1,0 +1,292 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* <!-- start  Model pudełkowy --> */
+/* Model pudełkowy  */
+.excerpt {
+    /* Sets the border */
+    border: 2px dashed #2196F3;
+
+    /* Adds an inner padding */
+    padding: 10px 20px 5px;
+    /* padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 500px;
+    padding-left: 3px; */
+    /* Sets outer margins */
+    margin: 20px;
+}
+
+/* <!-- end  Model pudełkowy --> */
+
+.margin {
+    height: 250px;
+}
+
+/* <!-- start Właściwości width i height --> */
+.box {
+    /* Control the overall width
+        and element height or only
+        the size of its content area */
+    width: 150px;
+    height: 150px;
+
+    /* Sets the border */
+    border: 5px solid #f44336;
+    border-style: inset;
+    border-color: khaki;
+
+    /* Adds an inner padding */
+    padding: 30px;
+
+    /* Sets outer margins */
+    margin: 80px;
+
+    background-color: #ffeb3b;
+}
+
+/* <!-- end Właściwości width i height --> */
+
+
+
+/* <!--start  Właściwość box-sizing# --> */
+.content-box {
+    width: 300px;
+    height: 300px;
+    border: 8px solid blue;
+    padding: 30px;
+    box-sizing: content-box;
+    /*  domyślny  */
+}
+
+.div2 {
+    width: 300px;
+    height: 300px;
+    border: 8px solid blue;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* <!--end  Właściwość box-sizing# --> */
+
+/* start Geometria elementu */
+
+.text {
+    /* Setting the margin between the border and the element's content */
+    padding: 20px;
+
+    background-color: #fff;
+    border: 2px dashed #2a2a2a;
+}
+
+/* end Geometria elementu */
+
+
+
+/* <!-- start "Wypadnięcie" pionowych marginesów --> */
+.outer-box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    margin-top: 80px;
+}
+
+.inner-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 140px;
+    background-color: palevioletred;
+}
+
+
+/* <!-- end "Wypadnięcie" pionowych marginesów --> */
+
+/* start Zaokrąglone obramowanie */
+
+.box-1 {
+    width: 180px;
+    height: 80px;
+    background-color: #f44336;
+
+    /*  The value can be pixels  */
+    border-radius: 10px;
+}
+
+.box-2 {
+    width: 120px;
+    height: 120px;
+    background-color: #2196f3;
+
+    /*  The value can be percent  */
+    border-radius: 20%;
+}
+
+.box-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+
+    /*  If the block is a square, settings the radius to 50% will transform it to a circle  */
+    border-radius: 50%;
+}
+
+.box-1,
+.box-2 {
+    margin-bottom: 20px;
+}
+
+/* end Zaokrąglone obramowanie */
+
+/* <!-- start Centrowanie elementów blokowych w poziomie --> */
+
+.box-5 {
+    width: 280px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.indigo {
+    background-color: #3f51b5;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.amber {
+    background-color: #ffc107;
+}
+
+/* <!-- end Centrowanie elementów blokowych w poziomie --> */
+
+.outside {
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+}
+/* start  ekstra centrowanie pion poziom */
+.inside {
+    width: 150px;
+    height: 100px;
+    background-color: red;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end  ekstra centrowanie pion poziom */
+
+
+
+/* start Przerwa w elementach liniowych */
+.card {
+    max-width: 320px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f44336;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  li {
+      display: inline;
+  }
+  .card-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-image.no-gap {
+    display: block;
+  }
+  
+  .card-heading {
+    margin: 0;
+    padding: 20px;
+    font-weight: 500;
+    background-color: #03a9f4;
+  }
+
+/* end Przerwa w elementach liniowych */
+
+
+
+
+/* start  Cechy pionowych dopełnień i obramowań */
+
+.text {
+    background-color: tomato;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 10px solid #2196f3;
+    border-right: 10px solid #2196f3;
+  
+    /* Let's give the inline <span> element the top
+        and bottom margins, and borders that don't work.   */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 10px solid #2196f3;
+    border-bottom: 10px solid #2196f3;
+  }
+  
+  
+  p {
+    border: 5px solid #212121;
+  }
+/* end Cechy pionowych dopełnień i obramowań */
+
+
+
+/*Display: none vs visibility: hidden*/
+.item-2 {
+    display: none;
+}
+.item-4 {
+    visibility: hidden;
+}
+
+
+.box {
+    /* Ustawi style górnego obramowania  */
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: blue;
+  
+    /* Ustawi style prawego obramowania  */
+    border-right-width: 5px;
+    border-right-style: dotted;
+    border-right-color: black;
+  
+    /* Ustawi style dolnego obramowania  */
+    border-bottom-width: 7px;
+    border-bottom-style: dashed;
+    border-bottom-color: palevioletred;
+  
+    /* Ustawi style lewego obramowania  */
+    border-left-width: 9px;
+    border-left-style: dashed;
+    border-left-color: green;
+  }
+
+  .centrowanie-rodzic {
+      width: 80%;
+      height: 500px;
+      background-color: lightgray;
+  }
+  .dziecko {
+    width:40%;
+    height: 100px;
+    background-color: blue;
+  }

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zajęcia 11 - Elementy formularzy</title>
+</head>
+
+<body>
+    <select name="" id="">
+        <option value=""><a href="https://www.w3schools.com/tags/att_select_multiple.asp">w3schoolss</a></option>
+        <option value="https://www.wp.pl/"><a href="https://www.wp.pl/">WP</a></option>
+    </select>
+    <h1>Elementy formularzy</h1>
+    <hr>
+
+    <h2>Element form</h2>
+    <div class="form">
+        <form name="signup_form" autocomplete="on" novalidate>
+            <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" id="email" autocomplete="off" />
+            </label>
+ 
+            <label for="password">
+                <span>Password</span>
+                
+            </label>
+            <input type="password" name="password"  />
+
+            <button >Submit</button>
+            <ul>
+                <li>name </li>
+                <li>autocomplete / on/off</li>
+                <li>novalidate </li>
+            </ul>
+        </form>
+    </div>
+    <hr>
+    <h2>Element label</h2>
+    <div class="label">
+        <form>
+            <label for="user_email"><span>Email</span></label>
+            <input type="email" name="email" id="user_email" />
+            
+
+            <label for="user_password"><span>Password</span></label>
+            <input type="password" name="password" id="user_password" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <h2>Atrybut placeholder</h2>
+
+    <div class="placeholder">
+        <form>
+            <label label class="label">
+                Username
+                <input type="text" name="username" placeholder="Jacob Mercer" class="input" />
+            </label>
+            <label for="zipCode">Kod Pocztowy</label>
+            <input type="text" id="zipCode" placeholder="wpisz w formacie 00-000">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <h2>
+        Poczta i hasło
+    </h2>
+
+    <div class="haslo">
+        <form>
+            <label class="label" id="email">
+                Email
+                <input type="email" name="email" id="email" class="input" />
+            </label>
+            <label label class="label">
+                Password
+                <input type="password" name="password" minlength="5" maxlength="12" class="input" />
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <hr>
+    <h2>Radio input</h2>
+    <div class="radio">
+        <form>
+            <p>Choose a color:</p>
+            <label for="red">
+                <input type="radio" name="color" value="red" checked id="red"/>
+                Red
+            </label>
+            <label>
+                <input type="radio" name="color" value="white" />
+                White
+            </label>
+            <label>
+                <input type="radio" name="color" value="green" />
+                Green
+            </label>
+    </div>
+
+    <hr>
+
+    <h2>Pole wyboru checkbox</h2>
+    <div class="checbox">
+        <form>
+            <p>What are your hobbies?</p>
+            <label>
+                <input type="checkbox" name="hobby" value="music" checked />
+                Music
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="sports" checked />
+                Sports
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="reading" />
+                Reading
+            </label>
+    </div>
+
+
+    <hr>
+    <h2>Liczby - nie dla telefonu </h2>
+    <label>
+        Age
+        <input type="number" name="age" value="0" min="18" max="120" step="30"/>
+    </label>
+    <ul>
+        <li>step="" 1 or 10 or 0.01</li>
+        <li>min</li>
+        <li>max</li>
+        <li></li>
+        <li></li>
+    </ul>
+    <hr>
+
+    <h2>Input phone</h2>
+    <div class="phon">
+        <form>
+            <label for="onlyPhone">
+                Phone number
+                <input type="tel" name="phone_number" id="onlyPhone" />
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <hr>
+
+    <h2>
+        Czas
+    </h2>
+
+    <div class="time">
+
+        <label>
+            Date
+            <input type="date" min="1920-01-01" max="2020-01-01" />
+        </label>
+
+        <label>
+            Time
+            <input type="time" />
+        </label>
+
+        <label>
+            Date and time
+            <input type="datetime-local" min="1920-01-01T00:00" max="2020-01-01T00:00" />
+        </label>
+
+        <button type="submit">Submit</button>
+
+    </div>
+
+    <hr>
+    <h2>Element textarea</h2>
+    <div class="textarea">
+        <form>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="example@mail.com">
+            </label>
+            <label>
+                <span>Feedback</span>
+                <textarea name="feedback"  rows="5" placeholder="Type your message here..."></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+        <ul>
+            <li>resize css</li>
+            <li>rows</li>
+            <li>cols</li>
+        </ul>
+        <div contenteditable="true">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, fugit, et voluptas possimus labore enim dignissimos officia fugiat voluptatibus sed iste cupiditate reiciendis adipisci ipsam quaerat eum provident ducimus, explicabo error quam dolorem culpa? Aut asperiores rem eos provident nesciunt.</p>
+        </div>
+    </div>
+    <hr>
+    <h2>Select</h2>
+    <div class="select">
+        <label for="size">Size</label>
+        <select id="size" name="size" multiple>
+            <option value="0">wybierz z listy</option>
+            <option value="xs">Extra Small</option>
+            <option value="s">Small</option>
+            <option value="m" >Medium</option>
+            <option value="l">Large</option>
+        </select>
+    </div>
+    <hr>
+    <h2>Grupowanie opcji</h2>
+    <div class="grupowanie">
+        <label for="month">Month</label>
+        <select name="month" id="month">
+            <optgroup label="Summer">
+                <option value="s6">June</option>
+                <option value="s7">July</option>
+                <option value="s8">August</option>
+            </optgroup>
+
+            <optgroup label="Autumn">
+                <option value="s9">September</option>
+                <option value="s10">October</option>
+                <option value="s11">November</option>
+            </optgroup>
+        </select>
+    </div>
+    <hr>
+    <h2>datalist</h2>
+    <div class="datalist">
+        <label for="fav">Choose your favourite browser</label>
+        <input list="browsers" name="fav" id="fav" />
+
+        <datalist id="browsers">
+            
+            <option>Edge</option>
+            <option>Firefox</option>
+            <option>Chrome</option>
+            <option>Opera</option>
+            <option>Safari</option>
+        </datalist>
+        <br>
+        <label for="state">Choose your state</label>
+        <input type="text" name="state" id="state" list="states" />
+        <datalist id="states">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </datalist>
+    </div>
+
+
+        <div >
+            <span>+48</span>
+            <input aria-label="Numer telefonu" type="text" name="" id="telefon" title="Podaj numer telefonu">
+        </div>
+
+
+
+    <label for="file">
+        <input type="file" name="" id="file">
+        <div>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor corporis dicta aliquam nulla, eaque unde voluptatum ea animi. Corporis architecto earum vel aspernatur totam eum minima quo debitis reiciendis eveniet, odit dolorum exercitationem quae non quia eaque illo odio provident, maxime at delectus nobis iure reprehenderit? Necessitatibus, dolore facere.</p>
+        </div>
+    </label>
+    
+    
+    
+    
+    <hr>
+    <h2>aria role </h2>
+
+    <div class="aria">
+        <form class="form">
+            <div class="form-group" role="group" aria-labelledby="contact-details-head">
+                <p id="contact-details-head">Enter your contact details</p>
+                <label>
+                    Name
+                    <input type="text" name="username" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+            </div>
+
+            <div class="form-group" role="group" aria-labelledby="language-head">
+                <p id="language-head">Your favourite programming language</p>
+                <label>
+                    <input type="checkbox" name="language" value="python">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="js">
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="ruby">
+                    Ruby
+                </label>
+            </div>
+
+            <div class="form-group" role="group" aria-labelledby="newsletter-head">
+                <p id="newsletter-head">I want to receive</p>
+                <label>
+                    <input type="checkbox" name="newsletter" value="weekly">
+                    The weekly newsletter
+                </label>
+                <label>
+                    <input type="checkbox" name="newsletter" value="company_offers">
+                    Offers from the company
+                </label>
+                <label>
+                    <input type="checkbox" name="newsletter" value="associated_offers">
+                    Offers from associated companies
+                </label>
+            </div>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <hr>
+    <h2>Grupowanie pól</h2>
+    <div class="grupa">
+        <form>
+            <fieldset>
+                <legend>Enter your contact details</legend>
+                <label>
+                    Name
+                    <input type="text" name="username" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your favourite programming language</legend>
+                <label>
+                    <input type="checkbox" name="language" value="python">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="js">
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="ruby">
+                    Ruby
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>I want to receive</legend>
+                <label>
+                    <input type="checkbox" name="newsletter" value="weekly">
+                    The weekly newsletter
+                </label>
+                <label>
+                    <input type="checkbox" name="newsletter" value="company_offers">
+                    Offers from the company
+                </label>
+                <label>
+                    <input type="checkbox" name="newsletter" value="associated_offers">
+                    Offers from associated companies
+                </label>
+            </fieldset>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

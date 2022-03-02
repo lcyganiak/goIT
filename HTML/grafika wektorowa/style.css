@@ -1,0 +1,37 @@
+.main-icon-acquisitions {
+color: yellow;
+font-size: 500px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+fill: #2a2a2a;
+  fill-opacity: 0.7;
+
+
+}
+.email:hover {
+font-size: 45px;
+color: tomato;
+}
+
+.img-hover {
+    width: 1500px;
+    height: 1500px;
+    background-image: url(lizard-6962760_640.jpg);
+}
+.mask {
+    width:  100%;
+    height: 100%;
+    background-color: rgb(102, 51, 153);
+    opacity: 0;
+    position: relative;
+    
+}
+.mask:hover {
+    opacity: 0.22222;
+}
+body {
+    width: 50vw;
+}
+

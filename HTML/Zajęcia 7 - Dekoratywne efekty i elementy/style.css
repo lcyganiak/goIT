@@ -1,0 +1,384 @@
+
+
+/* <h2>Właściwość background-image</h2> */
+.tile-set {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tile {
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .tile:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .icon {
+    display: inline-flex;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+  }
+  .icon.with-bg {
+    background-color: #ff9800;
+  }
+  
+  .icon.with-icon {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+  }
+ /* <h2>Właściwość background-repeat</h2> */
+/* .container {
+    max-width: 960px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .tile-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: -40px;
+    margin-top: -40px;
+ }
+ 
+ .tile {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 120px;
+    flex-basis: calc(100% / 2 - 40px);
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+    background-color: #fff;
+ 
+    background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+    background-size: 40px;
+ }
+ 
+ .tile::before {
+    position: absolute;
+    top: -32px;
+    width: 100%;
+    content: "";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+ }
+ 
+ .no-repeat {
+    background-repeat: no-repeat;
+ }
+ 
+ .no-repeat::before {
+    content: "no-repeat";
+    font-family: monospace;
+ }
+ 
+ .repeat-x {
+    background-repeat: repeat-x;
+ }
+ 
+ .repeat-x::before {
+    content: "repeat-x";
+ }
+ 
+ .repeat-y {
+    background-repeat: repeat-y;
+ }
+ 
+ .repeat-y::before {
+    content: "repeat-y";
+ }
+ 
+ .repeat {
+    background-repeat: repeat;
+ }
+ 
+ .repeat::before {
+    content: "repeat";
+ } */
+
+ /* <h2>Wartości contain i cover</h2> */
+ .wrapper {
+    width: var(--wrapper-width);
+    height: var(--wrapper-width);
+    line-height: var(--wrapper-width);
+    margin: auto;
+    background: #fff url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat
+       center;
+    border: 2px dashed #2a2a2a;  
+    border-radius: 4px;
+    box-shadow: none;
+ }
+ 
+ .controls {
+    width: var(--wrapper-width);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+ }
+ 
+ button {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 20px;
+    padding: 8px 30px;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+       0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+ }
+ 
+ button:hover {
+    transform: scale(1.03);
+ }
+ 
+ .label {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ /*<h2>Właściwość background-attachment</h2>*/
+
+ .container-attachment {
+    padding: 40px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /*  Comment out this line  */
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
+    
+  }
+  
+  .box {
+    height: 300px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+  }
+  
+  .box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .box:nth-child(1) {
+    background-color: #2196f3;
+  }
+  
+  .box:nth-child(2) {
+    background-color: #4caf50;
+  }
+  
+  .box:nth-child(3) {
+    background-color: #ff9800;
+  }
+  
+  .box:nth-child(4) {
+    background-color: #e91e63;
+  }
+
+/*Warstwowe tło*/
+
+  .canvas {
+    max-width: 1000px;
+    height: 400px;
+  
+    background-image: url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+      url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+      url("https://cdn-icons-png.flaticon.com/512/814/814513.png"), url('https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/39.webp'),
+      url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+  
+    background-size: 80px, 100px, 150px, 130px, cover;
+    background-repeat: no-repeat;
+    background-position: top 120px right 130px, top 270px left 130px, center, 100px 60px,
+      center;
+  }
+
+
+
+/*<h2>Właściwość object-fit</h2>*/
+  .base {
+    width: 480px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .base > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card-set {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  
+  .card {
+    margin: 20px 0 0 20px;
+    flex-basis: calc(100% / 2 - 20px);
+  }
+  
+  .card,
+  .base {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+  }
+  
+  .card > .label,
+  .base > .label {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .card > .label {
+    font-family: monospace;
+    letter-spacing: -0.05em;
+  }
+  
+  .thumb {
+    position: relative;
+    height: 380px;
+    width: 100%;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .thumb > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card:nth-child(1) img {
+    object-fit: fill;
+  }
+  
+  .card:nth-child(2) img {
+    object-fit: contain;
+  }
+  
+  .card:nth-child(3) img {
+    object-fit: cover;
+  }
+  
+  .card:nth-child(4) img {
+    object-fit: scale-down;
+  }
+  
+  .card:nth-child(5) img {
+    object-fit: none;
+  }
+
+
+
+
+  /* Pseudoklasa :hover#*/
+
+  list {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .list-link {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  .list-link::before,
+  .list-link::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+  }
+  
+  /* Adds a fire icon in front of the link text */
+  .list-link::before {
+
+    margin-right: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+  }
+  
+  /* Adds and hides arrow icon after the link text */
+  .list-link::after {
+    display: none;
+    margin-left: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/507/507257.png")
+  }
+  
+  .list-link:hover {
+    color: #2196f3;
+  }
+  
+  /* Show arrow icon on hover */
+  .list-link:hover::after {
+    display: block;
+  }
+
+
+h2 {
+    -moz-background-: solid;
+}
+.thumb {
+    overflow: hidden;
+}
+img:hover {
+    transform: scale(1.2);
+    -moz-transform: scale(3);
+}
+h2 {
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,119 @@
+.container-mf {
+  max-width: 1170px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #8a3b3d;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.element {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* 
+   * Override or add new styles for blocks on wider screens.
+   */
+@media screen and (min-width: 768px) {
+  .container-mf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .element {
+    -ms-flex-preferred-size: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .element {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+}
+
+/*
+   * SASS loop for background color generation.
+   */
+.element:nth-child(1) {
+  background-color: #F44336;
+}
+
+.element:nth-child(2) {
+  background-color: #3F5206;
+}
+
+.element:nth-child(3) {
+  background-color: #4CAF50;
+}
+
+.element:nth-child(4) {
+  background-color: #00BCD4;
+}
+
+.element:nth-child(5) {
+  background-color: #E91E63;
+}
+
+.element:nth-child(6) {
+  background-color: #009688;
+}
+
+@media (max-width: 767px) {
+  .element {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .element {
+    border: 1px solid black;
+  }
+}
+
+.deskopt {
+  display: none;
+}
+
+.galeria {
+  width: 200px;
+  height: 200px;
+  border: 1px solid yellowgreen;
+  /**/
+}
+
+@media (max-width: 767px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .deskopt {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+  }
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */

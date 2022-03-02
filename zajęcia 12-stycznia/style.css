@@ -1,0 +1,79 @@
+
+:root {
+    --praimary: rgb(37, 100, 216);
+    --fontSize: 20px;
+    --fontFamily: 'Roboto Mono', monospac;
+}
+
+
+
+
+
+
+body {
+    font-size: 30px;
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    font-style: italic;
+}
+.main-pre {
+    font-size: 0.75rem;
+}
+
+.main_paragraf::first-letter {
+    font-size: var(--fontSize);
+}
+
+.main_paragraf::selection {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.main_paragraf,  .main_span {
+    color: deepskyblue;
+    text-transform: capitalize;
+}
+.main_paragraf {
+    /* text-align: right; */
+    text-indent: 50px;
+}
+.xd p {
+    color: var(--praimary);
+}
+
+#home {
+   text-decoration: none;
+   text-transform: capitalize;
+}
+#home:hover {
+    text-decoration: underline;
+
+    text-transform: uppercase;
+}
+#oferta {
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+
+#kontakt {
+    text-decoration: overline;
+}
+
+.nameAndSname {
+    text-transform: capitalize;
+    text-align: right;
+}
+ /* jeżeli chcesz przesunąc el. liniowy za pomoca text-align opakuj ten elemnt w inny el. ale blokowy*/
+/* .xd {
+    text-align: right;
+} */
+.xd  {
+    text-indent: 50%;
+    font-size: 40px;
+}
+.mnoznik {
+    line-height: 3;
+}
+.pre span{
+    white-space: pre;
+}
