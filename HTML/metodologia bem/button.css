@@ -1,0 +1,14 @@
+:root {
+    --add: #38c73d;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: whitesmoke; 
+    padding: 15px 35px;  
+    cursor: pointer;
+   }
+   .btn__add {
+       background-color: var(--add);
+   }
